@@ -1,0 +1,122 @@
+p{
+    font-family:Baskerville;
+    color: rgb(206, 61, 85);
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+body{
+    background-color: rgb(221, 204, 204);
+}
+
+.botao{
+    border-style: solid;
+    border-color: blueviolet;
+}
+
+h1{
+    font-family: Baskerville;
+    color: rgb(196, 84, 177);
+    text-align: center;
+    background-color: rgb(228, 212, 170);
+    font-style: oblique;
+    background-image:url(../img/fundo.jpg);
+}
+
+a{
+    font-family: Arial;
+    color: rgb(206, 61, 146);
+    font-size: 20px;
+    text-align: center;
+}
+label{
+    font-family: Baskerville;
+    color: rgb(206, 61, 85);
+    text-align: justify;
+}
+
+input{
+    font-family: Arial;
+    color: rgb(206, 61, 85);
+    text-align: justify;
+}
+
+table{
+    font-family: Arial;
+    color: rgb(206, 61, 85);
+    text-align: center;
+}
+br{
+    font-family: Arial;
+    color: rgb(206, 61, 85);
+    text-align: center;
+    line-height: 1,5px;
+}
+
+.cadastro{
+    text-align: center;
+    background-color: rgb(188, 114, 234);
+    
+}
+
+.form_cadastro{
+    text-align: center;
+}
+
+.label_cadastro{
+    font-family: Baskerville;
+    color: rgb(43, 32, 51);
+    text-align: justify;
+    font-size: x-large;
+}
+
+.input_cadastro{
+    font-family: Arial;
+    color: rgb(43, 32, 51);
+    text-align: justify;
+    font-size: small;
+}
+
+.body_cadastro{
+    background-color: rgb(255, 197, 163);
+
+}
+
+.tabela_preco{
+    font-family: Arial;
+    text-align: center;
+    background-color: white;
+    font-size: xx-large;
+    border-style: solid;
+    border-color: rgb(37, 61, 199);
+}
+
+.tr_preco{
+    font-family: Arial;
+    text-align: center;
+}
+
+.th_preco{
+    font-family: Arial;
+    text-align: center;
+}
+
+.td_preco{
+    font-family: Arial;
+    text-align: center;
+}
+.body_preco{
+    background-color: rgb(255, 197, 163);
+}
+.tabela_titulo_preco{
+    font-family: Baskerville;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgb(188, 114, 234);
+    font-size: xx-large;
+}
+
+#blue{
+    color: rgb(37, 61, 199);
+}

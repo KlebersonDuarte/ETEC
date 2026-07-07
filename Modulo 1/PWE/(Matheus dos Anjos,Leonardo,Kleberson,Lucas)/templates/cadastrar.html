@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar-se - Projeto Heróis</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='img/cadastro.png') }}">
+</head>
+<body>
+  <div class="tela-login">
+    <!-- Lado esquerdo -->
+    <div class="login-esquerda">
+      <div class="login-box">
+        <h2 class="titulo-form">CADASTRAR-SE</h2>
+
+        <!-- Mensagem de erro/sucesso -->
+        {% with mensagens = get_flashed_messages(with_categories=True) %}
+          {% if mensagens %}
+            {% for categoria, msg in mensagens %}
+              <div class="flash-message {% if categoria == 'erro' %}flash-erro{% else %}flash-sucesso{% endif %}">
+                {{ msg }}
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+
+        <!-- Formulário -->
+        <form action="{{ url_for('salvar_cadastro') }}" method="post">
+          <div class="campo-form">
+            <input type="text" name="nome" placeholder="Nome de Usuário" class="input-form"
+                   value="{{ nome or '' }}" required>
+          </div>
+
+          <div class="campo-form">
+            <input type="email" name="email" placeholder="Digite seu e-mail" class="input-form"
+                   value="{{ email or '' }}" required>
+          </div>
+
+          <div class="campo-form">
+            <input type="password" name="senha" placeholder="Crie uma senha" class="input-form" required>
+          </div>
+
+          <div class="campo-form">
+            <input type="password" name="repetir" placeholder="Repita sua senha" class="input-form" required>
+          </div>
+
+          <div class="campo-form">
+            <input type="date" name="nascimento" class="input-form" value="{{ nascimento or '' }}" required>
+          </div>
+
+          <div class="campo-form">
+            <select name="genero" class="input-form" required>
+              <option value="">Selecione seu gênero</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="nao-binario">Não-binário</option>
+              <option value="outro">Outro</option>
+              <option value="nao-informar">Prefiro não informar</option>
+            </select>
+          </div>
+
+          <button type="submit" class="botao-form">Cadastrar-se</button>
+        </form>
+
+        <div class="rodape-form">
+          <a href="{{ url_for('form') }}">Já tem cadastro? Faça login</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lado direito -->
+    <div class="login-direita">
+      <img src="{{ url_for('static', filename='img/b.png') }}" alt="Batman" class="heroi-img">
+      <img src="{{ url_for('static', filename='img/f.png') }}" alt="Flash" class="heroi-img">
+      <img src="{{ url_for('static', filename='img/s.png') }}" alt="Homem-Aranha" class="heroi-img">
+    </div>
+  </div>
+
+  <script>
+    // Faz o alerta sumir depois de 4 segundos
+    const alerta = document.querySelector('.flash-message');
+    if (alerta) {
+      setTimeout(() => alerta.remove(), 4000);
+    }
+  </script>
+</body>
+</html>

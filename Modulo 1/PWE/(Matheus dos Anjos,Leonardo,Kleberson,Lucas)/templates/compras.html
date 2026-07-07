@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="{{ url_for('static', filename='img/icone site marvel compras.png') }}">
+  <title>Compras MR</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="compras">
+    <header class="headerC">
+      <h1><span class="red">C</span>ompras</h1>
+    </header>
+
+    <aside class="asideC">
+      <div class="ComprarMRouDC">
+        <a href="{{ url_for('compras') }}" class="mr"><img src="{{ url_for('static', filename='img/marvel.jpeg') }}" alt=""></a>
+        <a href="{{ url_for('comprasDC') }}" class="dc"><img src="{{ url_for('static', filename='img/dc.jpeg') }}" alt=""></a>
+      </div>
+    </aside>
+
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    
+        <div class="slide-menu">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Início</a></li>
+                <li><a href="{{ url_for('compras') }}">Compras</a></li>
+                <li><a href="{{ url_for('ilustracoes') }}">Ilustrações</a></li>
+                <li><a href="{{ url_for('nacionais') }}">Nacionais</a></li>
+                <li><a href="{{ url_for('sobre') }}">E Mais Sobre Nós </a></li>
+                <li><a href="{{ url_for('filmes') }}">Movies</a></li>
+                <li><a href="{{ url_for('animacoes') }}">Animações</a></li>
+                <li><a href="{{ url_for('form') }}">Login</a></li>
+            </ul>
+        </div>
+    
+        <div class="overlay"></div>
+
+
+    <main class="mainCMR">
+      <div class="gridMR">
+        <div class="boxMR"><a href="https://produto.mercadolivre.com.br/MLB-4104115549-funko-box-collectors-corps-marvel-we-are-groot-l-_JM?matt_tool=18956390&utm_source=google_shopping&utm_medium=organic"><img src="{{ url_for('static', filename='img/comprinhas MR 1.png') }}" alt=""></a></div>
+        <div class="boxMR"><a href="https://www.toyshow.com.br/mkp/action-figure-homem-de-ferro-iron-man-mark-l-luxury-vingadores-guerra-infinita-marvel-escala-110-zd-toys-mkp-111973?variant_id=53789&parceiro=6590&srsltid=AfmBOopGY087koCQJnGuL7-F2NmqkIu2dkoOz2ZJx_wf2pT1Ch3JM3d5w8E"><img src="{{ url_for('static', filename='img/comprinhas MR 2.png') }}" alt=""></a></div>
+        <div class="boxMR"><a href="https://shopee.com.br/product/321989452/22393746119?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVHQ3ZkZSUTMrR3pBWmZZNzdrcnRBM0RkRnVqS2NGQjVpcURWQjZ2L2VycitHZGxLMEN2bWxRUlNUdHR2K2FzMnpvVUlEczhYdUxpK1QyYzRIUWI0Z0pGQld3Ump3Rkh6aXFtZ0IwRXRNNWdrd0RocHB1YmtqNWZlRThPQkVvOVRRPT0"><img src="{{ url_for('static', filename='img/comprinhas MR 3.png') }}" alt=""></a></div>
+        <div class="boxMR"><a href="https://www.magazineluiza.com.br/boneco-hulk-marvel-mimo-toys/p/236542100/br/bnco/?seller_id=magazineluiza&srsltid=AfmBOoqCRv5tZfyEuq1zsnOkMmfeY72tpEgUpmXqZcRmWtWj83AsSI9IFHo"><img src="{{ url_for('static', filename='img/comprinhas MR 4.png') }}" alt=""></a></div>
+        <div class="boxMR"><a href="https://www.mercadolivre.com.br/martelo-marvel-thor-mjolnir-resina-hk6588/up/MLBU3215161920?pdp_filters=item_id:MLB5412146980"><img src="{{ url_for('static', filename='img/comprinhas MR 5.png') }}" alt=""></a></div>
+        <div class="boxMR"><a href="https://www.amazon.com.br/Metal-Earth-Fascinations-Infinity-Helicarrier/dp/B0D2PM9K49"><img src="/img/liga da justiça.jpg" alt=""><img src="{{ url_for('static', filename='img/comprinhas MR 6.png') }}" alt=""></a></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

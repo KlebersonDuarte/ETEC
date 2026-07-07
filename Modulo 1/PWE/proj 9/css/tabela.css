@@ -1,0 +1,98 @@
+* { 
+    margin: 0; padding: 0; box-sizing: border-box; 
+}
+
+body { 
+    background: #000; font-family: Arial, sans-serif; 
+}
+
+
+.tabela{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  min-height: 100vh; /*pro footer grudar no final da página */
+}
+
+header{
+    grid-area: header;
+    background: #000;
+    color: #00e5ff;
+    text-align: center;
+    padding: 2px 12px;
+}
+
+
+header h1{ 
+    font-size: 2.1rem; 
+    text-decoration: underline; 
+}
+
+header h2{ 
+    font-size: 1.5rem; 
+    text-decoration: underline; 
+}
+
+aside{
+    background: rgb(80, 64, 226);
+    border: 6px solid rgb(250,142,0);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: aside;
+}
+
+main{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    grid-area: main;
+    background: rgb(217, 255, 0);
+    border: 6px solid rgb(242, 0, 250);
+}
+
+footer{
+    grid-area: footer;
+    background: aqua;
+    border: 6px solid #ff0;
+    text-align: center;
+    padding: 14px 10px;
+    font-weight: bold;
+}
+footer a{ 
+    color: #000; text-decoration: underline; 
+    margin: 0 14px; 
+}
+
+table{
+    width: 92%;
+    border-collapse: collapse;
+    margin: 8px auto;
+    background: pink;
+    border: 5px solid cyan;
+    text-align: center;
+    font-size: 1.15rem;
+}
+th{
+    background: pink;
+    color: orangered;
+    padding: 10px;
+    text-decoration: underline;
+    border: none;
+}
+td{
+    color: orangered;
+    padding: 8px 6px;
+    border: none;
+}
+
+.petiscos{ 
+    width: 100%; 
+}

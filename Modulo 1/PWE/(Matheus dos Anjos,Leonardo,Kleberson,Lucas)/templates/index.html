@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ url_for('static', filename='img/absolute geek.png') }}">
+    <title>Absolute Geek</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="index">
+      
+      <!-- HEADER -->
+      <header>
+        <h1>ABSOLUTE</h1>
+
+      </header>
+
+      <!-- MAIN -->
+      <main>
+        <div class="cinema">
+          <a href="{{ url_for('compras') }}" class="box">C <span>Compras</span></a>
+          <a href="{{ url_for('ilustracoes') }}" class="box">I <span>Ilustrações</span></a>
+          <a href="{{ url_for('nacionais') }}" class="box">N <span>Nacionais</span></a>
+          <a href="{{ url_for('sobre') }}" class="box">E <span>E mais sobre nós</span></a>
+          <a href="{{ url_for('filmes') }}" class="box">M <span>Movies</span></a>
+          <a href="{{ url_for('animacoes') }}" class="box">A <span>Animações</span></a>
+          <a href="{{ url_for('form') }}" class="form"> <button>Login</button></a>
+        </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+        <p>Nossas redes: <a href="#">X</a> |<a href="#">Instagram</a></p>
+      </footer>
+
+    </div>
+  </body>
+</html>

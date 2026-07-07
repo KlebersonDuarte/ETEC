@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    grid-area: header;
+    background: #ec0000;
+    color: #00e5ff;
+    text-align: center;
+    padding: 20px;
+    border: 6px solid rgb(138, 35, 35);
+}
+
+
+header h1{ 
+    font-size: 2.1rem; 
+    text-decoration: underline; 
+}
+
+nav{
+    background-color: rgb(0, 255, 13);
+    grid-area: nav;
+    border: 6px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 7px;
+    font-weight: bold;
+}
+nav a{
+    color: #000; 
+    text-decoration: underline; 
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+aside{
+    border: 6px solid rgb(166, 6, 214);
+    background-color: rgb(42, 86, 231);
+    grid-area: aside;
+}
+
+.gato{
+    background-color: aqua;
+
+}
+
+.café{
+    position: absolute;
+    width: 6.5%;
+}
+
+main{
+    grid-area: main;
+    background-position: center;
+    bottom: 50%;
+    background-position: relative;
+    background-image: url(../img/Gatofé.fundo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.principal{
+    display: grid;
+    grid-template-columns:3fr 1fr;
+    grid-template-rows: 13vh 7vh 80vh;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside";
+}

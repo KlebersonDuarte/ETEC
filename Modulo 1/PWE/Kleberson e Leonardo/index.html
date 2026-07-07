@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Menu</title>
+</head>
+<body>
+  <form>
+    <label for="CodProduto">CodProduto</label>
+    <input type="number" id="CodProduto" maxlength="6" oninput="mascaraCodProduto(this)" placeholder="00.000"><br>
+
+    <label for="descricao">Descrição</label>
+    <input type="text" id="descricao"><br>
+
+    <label for="valor">Valor</label>
+    <input type="number" id="valor">
+
+    <label for="qtde">Quantidade</label>
+    <input type="number" id="qtde"><br>
+
+    <label>Forma de Pagamento</label><br>
+    <input type="radio" name="pagamento" value="pix"> Pix
+    <input type="radio" name="pagamento" value="prazo"> Prazo<br><br>
+
+    <input type="button" value="Calcular" onclick="fEnviar()"><br>
+  </form>
+
+  <div id="resultado"></div>
+
+</body>
+</html>

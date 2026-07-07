@@ -1,0 +1,22 @@
+#Android Studio
+.gradle/
+local.properties
+build/
+**/build/
+.idea/caches/
+.idea/libraries/
+.idea/workspace.xml
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.cxx/
+.externalNativeBuild/
+
+#Visual Studio
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates

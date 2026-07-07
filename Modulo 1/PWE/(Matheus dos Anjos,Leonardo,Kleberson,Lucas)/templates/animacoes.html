@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ url_for('static', filename='img/animações.png') }}">
+    <title>Animações Marvel</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+
+  <div class="animacao">
+    <body>
+
+    
+
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+      </label>
+  
+      <div class="slide-menu">
+          <ul>
+              <li><a href="{{ url_for('index') }}">Início</a></li>
+              <li><a href="{{ url_for('compras') }}">Compras</a></li>
+              <li><a href="{{ url_for('ilustracoes') }}">Ilustrações</a></li>
+              <li><a href="{{ url_for('nacionais') }}">Nacionais</a></li>
+              <li><a href="{{ url_for('sobre') }}">E Mais Sobre Nós </a></li>
+              <li><a href="{{ url_for('filmes') }}">Movies</a></li>
+              <li><a href="{{ url_for('animacoes') }}">Animações</a></li>
+              <li><a href="{{ url_for('form') }}">Login</a></li>
+          </ul>
+      </div>
+  
+      <div class="overlay"></div>
+
+      
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+  <!--parte de sima-->
+
+  <header class="simaA">
+
+    <a href="{{ url_for('animacoes') }}" class="MRA"><img src="{{ url_for('static', filename='img/logo M vertical A.jpg') }}" alt="Falha ao carregar a imagem"></a>
+    <h1 class="AnimaTitulo">Animações</h1>
+    <a href="{{ url_for('animacoesDC') }}" class="DCA"><img src="{{ url_for('static', filename='img/logo D vertical A.jpg') }}" alt="Falha ao carregar a imagem"></a>
+  </header>
+
+  <!--parte do meio-->
+    
+  <main class="meioA">
+
+        <div class="gridMRA">
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/Hulk vs') }}"  alt="..."></a></div>
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/Araversin.jpg') }}" alt=""></a></div>
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/Homem de feno.jpg') }}" alt=""></a></div>
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/doutor estranhonho.webp') }}" alt=""></a></div>
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/Vingadores animação.jpeg') }}" alt=""></a></div>
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/thorposter.jpg') }}" alt=""></a></div> 
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/vingadores_viuva.jpg') }}" alt=""></a></div>
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/E se carrosel.webp') }}" alt=""></a></div>
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/Xmen97poster.webp') }}" alt=""></a></div>
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/Hitmonkeyposter.webp') }}" alt=""></a></div>
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/X-menEvolutionposter.jpg') }}" alt=""></a></div>
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/VingadoresUnidosposter.webp') }}" alt=""></a></div>
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/UltimatePoster.webp') }}" alt=""></a></div>
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/OlhosdeWakanda.jpg') }}" alt=""></a></div>
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/EusouGrootPoster.webp') }}" alt=""></a></div>
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/HulkEosAgentePoster.webp') }}" alt=""></a></div>
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/QuartetoTopposter.jpg') }}" alt=""></a></div>
+          <div class="boxMRA"><a href="#"><img src="{{ url_for('static', filename='img/Esquadrão de heroisposter.webp') }}" alt=""></a></div>
+        </div>
+
+    
+      </main>
+
+  <aside class="asideF_right">
+    <div id="carouselRightF" class="carousel slide">
+      <div class="carousel-inner">
+       <div class="carousel-item active">
+         <img src="{{ url_for('static', filename='img/Hulk vs capa carrosel.jpg') }}"  alt="...">
+       </div>
+       <div class="carousel-item">
+         <img src="{{ url_for('static', filename='img/Araversin carrosel.png') }}"  alt="...">
+       </div>
+           <div class="carousel-item">
+         <img src="{{ url_for('static', filename='img/Homem de feno carrosel.jpg') }}"  alt="...">
+       </div>
+           <div class="carousel-item">
+         <img src="{{ url_for('static', filename='img/doutor estranho anima.jpg') }}"  alt="...">
+       </div>
+           <div class="carousel-item">
+         <img src="{{ url_for('static', filename='img/Vingadores.jpg') }}"  alt="...">
+       </div>
+           <div class="carousel-item">
+         <img src="{{ url_for('static', filename='img/thorzincarrosel.webp') }}"  alt="...">
+           </div> 
+         <div class="carousel-item">
+         <img src="{{ url_for('static', filename='img/vingadores_viuvacarrosel.jpg') }}"  alt="...">
+       </div>
+       <div class="carousel-item">
+         <img src="{{ url_for('static', filename='img/E se.webp') }}"  alt="...">
+       </div>
+       <div class="carousel-item">
+         <img src="{{ url_for('static', filename='img/Xmen97.webp') }}"  alt="...">
+       </div>
+       <div class="carousel-item">
+         <img src="{{ url_for('static', filename='img/Hitmonkey.jpg') }}"  alt="...">
+       </div> 
+         <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/X-menEvolution.jpg') }}"  alt="...">
+         </div>
+         <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/VingadoresUnidos.webp') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/UltimateCarrosel.webp') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/OlhosdeWakandaCarrosel.jpg') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/EusouGrootCarrosel.webp') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/HulkEosAgente.webp') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/QuartetoTop.jpg') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/Esquadrão de herois.webp') }}"  alt="...">
+        </div>
+     </div>
+   </div>
+  </aside>
+
+
+  <aside class="asideF_left">
+    <div id="carouselLeftF" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{ url_for('static', filename='img/Hulk vs capa carrosel.jpg') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/Araversin carrosel.png') }}"  alt="...">
+        </div>
+            <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/Homem de feno carrosel.jpg') }}"  alt="...">
+        </div>
+            <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/doutor estranho anima.jpg') }}"  alt="...">
+        </div>
+            <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/Vingadores.jpg') }}"  alt="...">
+        </div>
+            <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/thorzincarrosel.webp') }}"  alt="...">
+            </div> 
+          <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/vingadores_viuvacarrosel.jpg') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/E se.webp') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/Xmen97.webp') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/Hitmonkey.jpg') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/X-menEvolution.jpg') }}"  alt="...">
+          </div>
+          <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/VingadoresUnidos.webp') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/UltimateCarrosel.webp') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/OlhosdeWakandaCarrosel.jpg') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/EusouGrootCarrosel.webp') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/HulkEosAgente.webp') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/QuartetoTop.jpg') }}"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/Esquadrão de herois.webp') }}"  alt="...">
+        </div>
+        </div>
+        </div>
+
+    
+  </aside>
+  <!--parte de baixo-->
+
+  <footer class="baixoA">
+   <p>Redes sociais: 
+      <a href="#">X</a> | 
+      <a href="#">Instagram</a>
+    </p>
+  </footer>
+
+
+
+
+      </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Inicializa os dois carrosseis sem intervalo próprio
+    let leftCarousel = new bootstrap.Carousel(document.querySelector("#carouselLeftF"), {
+      interval: false
+    });
+
+    let rightCarousel = new bootstrap.Carousel(document.querySelector("#carouselRightF"), {
+      interval: false
+    });
+
+    // Sincroniza a troca
+    setInterval(() => {
+      leftCarousel.next();
+      rightCarousel.next();
+    }, 10000); // troca a cada 10 segundos
+  });
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

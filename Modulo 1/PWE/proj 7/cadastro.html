@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Estilo.css">
+    <title>Document</title>
+</head>
+<body class="body_cadastro">
+<center>
+    <h3 class="cadastro">CADASTRO</h3>
+    <form class="form_cadastro" action="" method="get">
+        <label class="label_cadastro" for="Nome">Nome</label>
+        <input class="input_cadastro" type="text" name="Nome" id="Nome" placeholder="Nome Completo" maxlength="50" required><br>
+
+        <label class="label_cadastro" for="CPF">CPF</label>
+        <input class="input_cadastro" type="number" name="CPF" id="CPF" placeholder="Seu CPF"  minlength="11" maxlength="11" required><br>
+
+        <label class="label_cadastro" for="Genero">Gênero</label>
+        <input class="input_cadastro" type="radio" name="Genero" value="M"> Masculino
+        <input class="input_cadastro" type="radio" name="Genero" value="F"> Feminino<br>
+
+        <label class="label_cadastro" for="Email">Email</label>
+        <input class="input_cadastro" type="email" name="Email" id="Email" placeholder="Email" required><br>
+
+        <label class="label_cadastro" for="Zap">WhatsApp</label>
+        <input class="input_cadastro" type="number" name="Zap" id="Zap"required placeholder="WhatsApp"><br>
+
+        <label class="label_cadastro" for="prod">Produto Favoritos:</label> <br>
+            <input class="input_cadastro" type="checkbox" name="prod" value="Shampoo">Shampoo
+            <input class="input_cadastro" type="checkbox" name="prod" value="Hidratente"> Hidratente
+            <input class="input_cadastro" type="checkbox" name="prod" value="Creme">Creme
+            <input class="input_cadastro" type="checkbox" name="prod" value="Esmalte">Esmalte
+            <input class="input_cadastro" type="checkbox" name="prod" value="Perfume"> Perfume
+            <input class="input_cadastro" type="checkbox" name="prod" value="Pinca"> Pinça
+            <input class="input_cadastro" type="checkbox" name="prod" value="Cortador"> Cortador de Unha
+            <input class="input_cadastro" type="checkbox" name="prod" value="Desodorante"> Desodorante <br>
+
+        <input class="input_cadastro" type="submit" name="Enviar" value="Enviar">
+        <input class="input_cadastro" type="reset" name="Apagar" value="Apagar">
+
+    </form><br><br>
+<a href="index.html">Voltar</a></center> 
+</body>
+</html>

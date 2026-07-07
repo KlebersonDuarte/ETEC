@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heróis Nacionais</title>
+  <link rel="icon" href="{{ url_for('static', filename='img/nacionais.png') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="nacionais">
+
+  <header class="headerN">
+    <h1>HERÓIS NACIONAIS</h1>
+    
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    
+        <div class="slide-menu">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Início</a></li>
+                <li><a href="{{ url_for('compras') }}">Compras</a></li>
+                <li><a href="{{ url_for('ilustracoes') }}">Ilustrações</a></li>
+                <li><a href="{{ url_for('nacionais') }}">Nacionais</a></li>
+                <li><a href="{{ url_for('sobre') }}">E Mais Sobre Nós </a></li>
+                <li><a href="{{ url_for('filmes') }}">Movies</a></li>
+                <li><a href="{{ url_for('animacoes') }}">Animações</a></li>
+                <li><a href="{{ url_for('form') }}">Login</a></li>
+            </ul>
+        </div>
+    
+        <div class="overlay">
+  </header>
+<aside class="asideN">
+     
+</aside>
+  <main class="mainN">
+    <!-- Heroi na esquerda -->
+
+
+    <!-- Círculos dos heróis -->
+    <div class="heroisGrid">
+      <div class="circulosN">
+        <a href="#" class="circleN"><img src="{{ url_for('static', filename='img/doutrinador.jfif') }}" alt=""></a>
+        <a href="#" class="circleN"><img src="{{ url_for('static', filename='img/Juaguar.webp') }}" alt=""></a>
+        <a href="#" class="circleN"><img src="{{ url_for('static', filename='img/Xexeu.jpg') }}" alt=""></a>
+        <a href="#" class="circleN"><img src="{{ url_for('static', filename='img/Renata.webp') }}" alt=""></a>
+        <a href="#" class="circleN"><img src="{{ url_for('static', filename='img/José.jfif') }}" alt=""></a>
+        <a href="#" class="circleN"><img src="{{ url_for('static', filename='img/VElta.jpg') }}" alt=""></a>
+        <a href="#" class="circleN"><img src="{{ url_for('static', filename='img/Miriam.jfif') }}" alt=""></a>
+        <a href="#" class="circleN"><img src="{{ url_for('static', filename='img/Raio preto.jfif') }}" alt=""></a>
+        <a href="#" class="circleN"><img src="{{ url_for('static', filename='img/Iara.jfif') }}" alt=""></a>
+        <a href="#" class="circleN"><img src="{{ url_for('static', filename='img/Capitão7.jfif') }}" alt=""></a>
+        <a href="#" class="circleN"><img src="{{ url_for('static', filename='img/Magma.jfif') }}" alt=""></a>
+        <a href="#" class="circleN"><img src="{{ url_for('static', filename='img/YaWara.jfif') }}" alt=""></a>
+        <a href="#" class="circleN"><img src="{{ url_for('static', filename='img/Fogo.jfif') }}" alt=""></a>
+        <a href="#" class="circleN"><img src="{{ url_for('static', filename='img/Roberto.jpg') }}" alt=""></a>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footerN">
+    <p>Redes sociais: 
+      <a href="#">X</a> | 
+      <a href="#">Instagram</a>
+    </p>
+  </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</div>
+</body>
+</html>

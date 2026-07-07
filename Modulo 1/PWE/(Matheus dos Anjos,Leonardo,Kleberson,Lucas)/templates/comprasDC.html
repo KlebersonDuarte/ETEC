@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="{{ url_for('static', filename='img/icone site dc compras.png') }}">
+  <title>Compras DC</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="compras">
+    <header class="headerC">
+      <h1><span class="red">C</span>ompras</h1>
+    </header>
+
+    <aside class="asideC">
+      <div class="ComprarMRouDC">
+        <a href="{{ url_for('compras') }}" class="mr"><img src="{{ url_for('static', filename='img/marvel.jpeg') }}" alt=""></a>
+        <a href="{{ url_for('comprasDC') }}" class="dc"><img src="{{ url_for('static', filename='img/dc.jpeg') }}" alt=""></a>
+      </div>
+    </aside>
+
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    
+        <div class="slide-menu">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Início</a></li>
+                <li><a href="{{ url_for('compras') }}">Compras</a></li>
+                <li><a href="{{ url_for('ilustracoes') }}">Ilustrações</a></li>
+                <li><a href="{{ url_for('nacionais') }}">Nacionais</a></li>
+                <li><a href="{{ url_for('sobre') }}">E Mais Sobre Nós </a></li>
+                <li><a href="{{ url_for('filmes') }}">Movies</a></li>
+                <li><a href="{{ url_for('animacoes') }}">Animações</a></li>
+                <li><a href="{{ url_for('form') }}">Login</a></li>
+            </ul>
+        </div>
+    
+        <div class="overlay"></div>
+
+        
+    <main class="mainCDC">
+      <div class="gridDC">
+        <div class="boxDC"><a href="https://www.amazon.com.br/Hot-Toys-Batman-Forever-Multicolorido/dp/B08W54N9W1?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1ZZFT5FULY4LN"><img src="{{ url_for('static', filename='img/comprinhas DC 1.png') }}" alt=""></a></div>
+        <div class="boxDC"><a href="https://www.amazon.com.br/LEGO-DC-Batman-Animada-Gotham/dp/B0CPYQB38F?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1ZZFT5FULY4LN"><img src="{{ url_for('static', filename='img/comprinhas DC 2.png') }}" alt=""></a></div>
+        <div class="boxDC"><a href="https://ironstudios.com.br/products/estatua-mulher-maravilha-unleashed-marble-ver-dc-comics-art-scale-1-10-iron-studios?variant=51280466411827&country=BR&currency=BRL&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOoq2-M3mOgaW24V7EuQP4H0cMCY0i7Yc7pJTZx0gznKS6qaDrKl33JU"><img src="{{ url_for('static', filename='img/comprinhas DC 3.png') }}" alt=""></a></div>
+        <div class="boxDC"><a href="https://produto.mercadolivre.com.br/MLB-778308019-3-dvds-dc-universe-box-coleco-3-filmes-superman-batman-_JM?matt_tool=18956390&utm_source=google_shopping&utm_medium=organic"><img src="{{ url_for('static', filename='img/comprinhas DC 4.png') }}" alt=""></a></div>
+        <div class="boxDC"><a href="https://produto.mercadolivre.com.br/MLB-4190461853-dc-shoes-jaquetas-masculinas-de-cor-solida-_JM?matt_tool=18956390&utm_source=google_shopping&utm_medium=organic&attributes=COLOR_SECONDARY_COLOR%3AQ2luemE%3D%2CSIZE%3ATQ%3D%3D"><img src="{{ url_for('static', filename='img/comprinhas DC 5.png') }}" alt=""></a></div>
+        <div class="boxDC"><a href="https://shopee.com.br/product/998755736/18698500600?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVHQ3ZkZSUTMrR3pBWmZZNzdrcnRBMzFPVWVLamY5NEczUzdGNWQ5RnlHL0Z4MlFDWWlESU5ENDQ2RWtJajQzMzZzWkxjbFB0SjZRZGF5RlVyUndMSGROSGRTaC9tejl0eTV3UHhWZGtxcGp4L284eCt0eUtUeHJ1ejJjSSt1MnFnPT0"><img src="{{ url_for('static', filename='img/comprinhas DC 6.png') }}" alt=""></a></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

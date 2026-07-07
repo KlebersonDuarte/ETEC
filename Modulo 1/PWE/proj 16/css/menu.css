@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    grid-area: header;
+    background: blueviolet;
+}
+
+main{
+    grid-area: main;
+    background: rgb(36, 31, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    grid-area: footer;
+    background: yellow;
+    display: flex;
+    align-items: center;
+}
+
+footer p{
+    size: large;
+}
+
+.menu{
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+table{
+    background-color:green;
+    color: white;
+    border: 10px;
+    border-color: azure;
+}
+.tabebela{
+    font-family: Arial;
+    text-align: center;
+
+    font-size: xx-large;
+    border-style: solid;
+    border-color: rgb(37, 61, 199);
+}
+.trtr{   font-family: Arial;
+    text-align: center;}

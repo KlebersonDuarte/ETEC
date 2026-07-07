@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="" name="form1">
+        Primeiro valor:
+        <input type="text" name="text1" id="text1"> <br> <p>
+        Segundo Valor:
+        <input type="text" name="text2" id="text2"> <br> <p>
+        Clque aqui para calcular:
+        <input type="button" name="enviar" id="enviar" value="Calcula" onclick="Calcular()">
+
+        <script type="text/javascript">
+            function Calcular(){
+                var PrimeiroNum = eval(document.form1.text1.value);
+             var SegundoNum = eval(document.form1.text2.value);
+             alert(PrimeiroNum + SegundoNum);
+            }
+        </script>
+    </form>
+</body>
+</html>

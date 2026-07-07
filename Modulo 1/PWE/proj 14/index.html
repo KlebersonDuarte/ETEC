@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>NOTAS</h2>
+<script>
+  nota1 = parseFloat(prompt("digite sua primeira nota: "))
+  nota2 = parseFloat(prompt("digite sua segunda nota: "))
+  nota3 = parseFloat(prompt("digite sua terceira nota: "))
+  media = (nota1 + nota2 + nota3) /3 
+
+    document.write("sua média foi: " + media)
+
+    if(media <=4.99)
+    {
+        document.write("<br>" + "Repitido")
+    }
+
+    else if(media <= 6.99)
+    {
+        document.write("<br>" +"Recuperação")
+    }
+
+    else
+    {
+        document.write("<br>" +"Aprovado")
+    }
+</script>
+</body>
+</html>

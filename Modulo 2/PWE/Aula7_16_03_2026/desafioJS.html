@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script type = "text/javascript">
+        nome = prompt("Digite seu nome:")
+
+        
+
+    </script>
+    <form action="" name="form1">
+        Primeiro Numero
+        <input type="number" name=" PrimeiroNum" id="PrimeiroNum"><br>
+        Segundo Numero
+        <input type="number" name="segundoNum" id="segundoNum"><br>
+
+        <input type="button" value="Somar" onclick="Somar()" ><br>
+        <script type="text/javascript">
+
+            function Somar(){
+                var PrimeiroNum = eval(document.form1.PrimeiroNum.value);
+                var segundoNum = eval(document.form1.segundoNum.value);
+                
+                document.write("Seu nome: "+nome);
+                var resultado = PrimeiroNum + segundoNum;
+                document.write('<br>');
+                document.write("Resultado: "+resultado);
+            }
+        </script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap'); /*link da biblioteca da fonte*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    grid-area: header;
+    background: rgb(255, 136, 239);
+    border: 6px solid rgb(0, 0, 0);
+    color: #000000;
+    text-align: center;
+    padding: 12px;
+}
+
+header h1{ 
+    font-size: 2.1rem; 
+    text-decoration: underline; 
+}
+
+.aside_left{
+    background-color: rgb(255, 0, 157);
+    grid-area: aside_left;
+    border: 6px solid rgb(0, 0, 0);
+}
+.aside_right{
+    background-color: rgb(255, 0, 157);
+    grid-area: aside_right;
+    border: 6px solid rgb(0, 0, 0);
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;  /* centraliza na horizontal */
+    align-items: center;      /* centraliza na vertical */
+    width: 100%;              /* ocupa todo espaço */
+    background-image: url(../img/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+footer{
+    grid-area: footer;
+    background: rgb(255, 136, 239);
+    border: 6px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 10px;
+    font-weight: bold;
+}
+footer a{ 
+    color: #000; text-decoration: underline; margin: 0 14px; 
+}
+
+
+.login{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas:
+    "header header header"
+    "aside_left main aside_right"
+    "footer footer footer";
+}
+
+
+.container{ /*isso é a caixa q tem tudo*/
+    background-color: transparent;
+    color: white;
+    padding: 30px 40px;
+    backdrop-filter: blur(10px); /*deixa o fundo borrado*/
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    border: 2px solid rgba(255, 255, 255, .2);
+    font-family: "Edu NSW ACT Cursive", cursive;
+}
+
+
+.container h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.input-box{ /*caixa*/
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{ /*decorando a caixa*/
+    width:100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    outline:none ;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{ /*letra de fundo*/
+    color: white;
+}
+
+.input-box i{/*imagem */
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%); /*fazendo isso a imagem fica no meio,antes ela n ficava pq o "meio" era onde a imagem começava*/
+    font-size: 20px;
+}
+
+.lembre-esqueci{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+/*
+         Margin e padding
+1 valor= todos os lados (EX:margin 20px)
+2 valores= primeiro valor em cima e em baixo e segundo valor nos lados (EX:margin:10px 5px)
+3 valores= primeiro valor em cima,segundo valor nos lado e terceiro valor em baixo (Ex:margin:15px 9px 20px)
+4 valores= sentido horário (cima,direiro,baixo,esquerda)(Ex:margin: 10px 4px 15px 20px)
+*/
+}
+
+.lembre-esqueci label input{
+    accent-color:white ; /*cor de fundo da caixa*/
+    margin-right: 5px;
+}
+
+.lembre-esqueci a{
+    text-decoration:none ;
+    color: rgb(221, 187, 250);
+}
+
+.lembre-esqueci a:hover{
+    text-decoration: underline;
+}
+
+.botao_login{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.registrar{
+font-size: 14px;
+text-align: center;
+margin: 20px 0 15px;
+}
+
+.registrar a{
+    text-decoration:none ;
+    color: rgb(221, 187, 250);
+    font-weight: 500;
+}
+
+.registrar a:hover{
+        text-decoration: underline;
+}

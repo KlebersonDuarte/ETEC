@@ -1,0 +1,22 @@
+h2{
+    color:aquamarine;
+    text-decoration: underline;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+text-decoration: underline;
+
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+body{
+    background: cadetblue;
+}

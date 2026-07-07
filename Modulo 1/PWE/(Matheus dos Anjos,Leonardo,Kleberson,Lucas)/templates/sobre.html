@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sobre</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='img/maissobre.png') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    
+        <div class="slide-menu">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Início</a></li>
+                <li><a href="{{ url_for('compras') }}">Compras</a></li>
+                <li><a href="{{ url_for('ilustracoes') }}">Ilustrações</a></li>
+                <li><a href="{{ url_for('nacionais') }}">Nacionais</a></li>
+                <li><a href="{{ url_for('sobre') }}">E Mais Sobre Nós </a></li>
+                <li><a href="{{ url_for('filmes') }}">Movies</a></li>
+                <li><a href="{{ url_for('animacoes') }}">Animações</a></li>
+                <li><a href="{{ url_for('form') }}">Login</a></li>
+            </ul>
+        </div>
+    
+        <div class="overlay"></div>
+
+  <div class="Sobre">
+    <header class="headerE">
+      <h1 class="h1E">E Sobre Nós</h1>
+    </header>
+    
+    <main class="mainE">
+
+  <!-- Parte da esquerda: círculos -->
+  <div class="circle">
+    <img src="{{ url_for('static', filename='img/kleberson.png') }}" alt="Foto">
+    <div class="nome">Kleberson</div>
+  </div>
+  
+  <div class="circle">
+    <img src="{{ url_for('static', filename='img/Lucas.png') }}" alt="Foto">
+    <div class="nome">Lucas</div>
+  </div>
+  
+  <div class="circle">
+    <img src="{{ url_for('static', filename='img/matheus.png') }}" alt="Foto">
+    <div class="nome">Matheus</div>
+  </div>
+  
+  <div class="circle">
+    <img src="{{ url_for('static', filename='img/leonardo.png') }}" alt="Foto">
+    <div class="nome">Leonardo</div>
+  </div>
+   <!-- FECHA AQUI os círculos -->
+
+  <!-- Parte da direita: mensagem -->
+  <div class="mensagem">
+    <h2>ESSE SITE FOI EXCLUSIVAMENTE FEITO EM UM PEQUENO GRANDE PROJETO DA ESCOLA...</h2>
+    <p>No futuro iremos focar em um site mais diverso...</p>
+  </div>
+
+</main>
+
+  <!-- Rodapé -->
+  <footer class="footerE">
+ <p>Redes sociais: 
+      <a href="#">X</a> | 
+      <a href="#">Instagram</a>
+    </p>
+  </footer>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

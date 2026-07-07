@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='img/login.png') }}">
+</head>
+<body>
+
+  <div class="tela-login">
+    <div class="login-esquerda">
+             <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    
+        <div class="slide-menu">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Início</a></li>
+                <li><a href="{{ url_for('compras') }}">Compras</a></li>
+                <li><a href="{{ url_for('ilustracoes') }}">Ilustrações</a></li>
+                <li><a href="{{ url_for('nacionais') }}">Nacionais</a></li>
+                <li><a href="{{ url_for('sobre') }}">E Mais Sobre Nós </a></li>
+                <li><a href="{{ url_for('filmes') }}">Movies</a></li>
+                <li><a href="{{ url_for('animacoes') }}">Animações</a></li>
+                <li><a href="{{ url_for('form') }}">Login</a></li>
+            </ul>
+        </div>
+    
+        <div class="overlay"></div>
+      <div class="login-box">
+
+        <!-- MENSAGENS -->
+        {% with mensagens = get_flashed_messages(with_categories=True) %}
+          {% if mensagens %}
+            {% for categoria, msg in mensagens %}
+              <div class="flash-message {% if categoria == 'erro' %}flash-erro{% else %}flash-sucesso{% endif %}">
+                {{ msg }}
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+
+        <h2 class="titulo-form">Login</h2>
+
+        <!-- LOGIN -->
+        <form action="{{ url_for('form') }}" method="post" class="formulario">
+          <div class="campo-form">
+            <input type="email" name="email" placeholder="E-mail" class="input-form"
+                   value="{{ email or '' }}" required>
+          </div>
+
+          <div class="campo-form">
+            <input type="password" name="senha" placeholder="Senha" class="input-form" required>
+          </div>
+
+          <div class="opcoes-form">
+            <label><input type="checkbox"> Lembre de mim</label>
+            <a href="{{ url_for('cadastrar') }}" class="link-senha">Não tem conta? Cadastre-se</a>
+          </div>
+
+          <div class="opcoes-formE">
+            <a href="#" id="abrir-esqueci" class="link-senha">Esqueci a senha</a>
+          </div>
+
+          <button type="submit" class="botao-form">Entrar</button>
+          <button type="reset" class="botao-form limpar">Limpar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="login-direita">
+      <img src="{{ url_for('static', filename='img/b.png') }}" alt="Batman" class="heroi-img">
+      <img src="{{ url_for('static', filename='img/f.png') }}" alt="Flash" class="heroi-img">
+      <img src="{{ url_for('static', filename='img/s.png') }}" alt="Homem-Aranha" class="heroi-img">
+    </div>
+  </div>
+
+  <!-- POP-UP -->
+  <div class="popup" id="popup-senha">
+    <div class="popup-box">
+      <h2 class="titulo-form">Esqueci a senha</h2>
+      <form id="form-esqueci">
+        <div class="campo-form">
+          <input type="email" id="email-recuperar" class="input-form" placeholder="Digite seu e-mail cadastrado" required>
+        </div>
+        <button type="submit" class="botao-form">Enviar</button>
+        <button type="button" id="fechar-popup" class="botao-form limpar">Voltar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <script>
+    const alerta = document.querySelector('.flash-message');
+    if (alerta) setTimeout(() => alerta.remove(), 4000);
+  </script>
+</body>
+</html>
