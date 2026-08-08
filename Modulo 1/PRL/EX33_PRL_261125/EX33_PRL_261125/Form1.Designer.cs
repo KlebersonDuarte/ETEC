@@ -3,14 +3,14 @@
     partial class Form1
     {
         /// <summary>
-        /// Required designer variable.
+        /// Variável de designer necessária.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Clean up any resources being used.
+        /// Limpar os recursos que estão sendo usados.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">true se for necessário descartar os recursos gerenciados; caso contrário, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,56 +20,57 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Código gerado pelo Windows Form Designer
 
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        /// Método necessário para suporte ao Designer - não modifique 
+        /// o conteúdo deste método com o editor de código.
         /// </summary>
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.cbFigura = new System.Windows.Forms.ComboBox();
+            this.cboFiguras = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(680, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 13);
+            this.label1.Size = new System.Drawing.Size(99, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Escolha a opção de imagem";
+            this.label1.Text = "Desenhador";
             // 
-            // cbFigura
+            // cboFiguras
             // 
-            this.cbFigura.FormattingEnabled = true;
-            this.cbFigura.Items.AddRange(new object[] {
-            "Círculo",
+            this.cboFiguras.FormattingEnabled = true;
+            this.cboFiguras.Items.AddRange(new object[] {
+            "Circulo",
             "Quadrado",
             "Elipse",
             "Pizza",
             "Retângulo",
-            "Círculo Cheio",
-            "Quadrado Cheio",
-            "Elipse Cheio",
-            "Pizza Cheia",
-            "Retângulo Chieo"});
-            this.cbFigura.Location = new System.Drawing.Point(159, 1);
-            this.cbFigura.Name = "cbFigura";
-            this.cbFigura.Size = new System.Drawing.Size(129, 21);
-            this.cbFigura.TabIndex = 1;
-            this.cbFigura.SelectedIndexChanged += new System.EventHandler(this.cbFigura_SelectedIndexChanged);
+            "Circulo Pintado",
+            "Quadrado Pintado",
+            "Elipse Pintado",
+            "Pizza Pintado",
+            "Retângulo Pintado"});
+            this.cboFiguras.Location = new System.Drawing.Point(667, 70);
+            this.cboFiguras.Name = "cboFiguras";
+            this.cboFiguras.Size = new System.Drawing.Size(121, 21);
+            this.cboFiguras.TabIndex = 1;
+            this.cboFiguras.SelectedIndexChanged += new System.EventHandler(this.cboFiguras_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(542, 450);
-            this.Controls.Add(this.cbFigura);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cboFiguras);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "EX33_PRL_261125";
+            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -78,7 +79,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbFigura;
+        private System.Windows.Forms.ComboBox cboFiguras;
     }
 }
 

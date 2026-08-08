@@ -46,7 +46,7 @@ namespace Proj12
             MySqlDataAdapter DA = new MySqlDataAdapter();
             DataSet DS = new DataSet();
             try
-            {
+            {   
                 Conn = AbrirBanco();
                 Cmd.CommandText = _StrSql;
                 Cmd.CommandType = CommandType.Text;

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <title>Formulário Simples</title>
+
+        <style>
+        body{
+            font-family: Arial;
+            width: 600px;
+            margin: auto;
+            margin-bottom: 10px;
+
+        }
+        input{
+            width: 300px;
+            padding: 8px;
+            margin-bottom: 10px;
+
+        }
+        button{
+            padding: 10px;
+        }
+        .resultado{
+            background: #EEEEEEEE;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Cadastro de Aluno</h1>
+
+    <label for="">Nome</label>
+    <input type="text" ng-model="nome">
+     <br><br>
+    <label for="">Idade</label>
+    <input type="number" ng-model="idade">
+     <br><br>
+    <label for="">Curso</label>
+    <input type="text" ng-model="curso">
+     <br><br>
+    <label for="">Cidade</label>
+    <input type="text" ng-model="cidade">
+
+    <br>
+    <button ng-click="mostrar=true">Mostrar Cadastro</button>
+    <button ng-click="mostrar=false">Ocultar Cadastro</button> <br>
+    
+    <div class="resultado" ng-show="mostrar">
+        <h2>Ficha do Aluno</h2>
+    <p><strong>Nome:</strong> {{nome}}</p>
+    <p><strong>Idade: </strong> {{idade}}</p>
+    <p><strong>Curso:</strong> {{curso}}</p>
+    <p><strong>Cidade:</strong> {{cidade}}</p>
+    </div>
+    
+</body>
+</html>

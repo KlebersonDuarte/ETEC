@@ -15,10 +15,6 @@ namespace EX34_PRL_27112025
                 string Frase, Letra;
                 int Tamanho, Contador = 1;
 
-
-
-
-
                 Console.Write("Digite uma frase: ");
 
                 Frase = (Console.ReadLine());

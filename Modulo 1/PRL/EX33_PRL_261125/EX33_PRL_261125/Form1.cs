@@ -17,7 +17,7 @@ namespace EX33_PRL_261125
             InitializeComponent();
         }
 
-        private void cbFigura_SelectedIndexChanged(object sender, EventArgs e)
+        private void cboFiguras_SelectedIndexChanged(object sender, EventArgs e)
         {
             Graphics MyGraphics = base.CreateGraphics();
             Pen MyPen = new Pen(Color.DarkRed);
@@ -25,8 +25,9 @@ namespace EX33_PRL_261125
 
             MyGraphics.Clear(Color.White);
 
-            switch (cbFigura.SelectedIndex) { 
-            case 0:
+            switch (cboFiguras.SelectedIndex)
+            {
+                case 0:
                     MyGraphics.DrawEllipse(MyPen, 50, 50, 150, 150);
                     break;
                 case 1:
@@ -53,10 +54,9 @@ namespace EX33_PRL_261125
                 case 8:
                     MyGraphics.FillPie(MyBrush, 50, 50, 150, 150, 0, 45);
                     break;
-                    case 9:
+                case 9:
                     MyGraphics.FillRectangle(MyBrush, 50, 50, 150, 100);
                     break;
-               
             }
         }
     }
